@@ -7,10 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-       fonter: ['Roboto', 'serif'],
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+    colors: {
+      
+      'one': '#092635',
+      'two': '#3FA2F6',
+      'three': '#00ADB5',
+      'nine': '#9DB2BF',
+      'white': '#FFFFFF',
     },
+   
+      fontFamily: {
+       font: ['Poppins', 'serif'],
+      },
+      
+  
   }, 
+},
   plugins: [],
 };
