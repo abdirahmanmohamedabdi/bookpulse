@@ -138,7 +138,7 @@ export default function Example() {
                 Sign in
               </a>
               <a
-                href="#"
+                href="/signup"
                 className="ml-8  items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm  font-font text-white bg-one hover:bg-gray-500"
               >
                 Sign up
@@ -196,7 +196,7 @@ export default function Example() {
             <div className="py-6 px-5">
               <div className="">
                 <a
-                  href="#"
+                  href="/signup"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base text-font font-medium text-white bg-one "
                 >
                   Sign up
