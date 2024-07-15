@@ -1,32 +1,29 @@
-'use client'
-import React from 'react'
-import { auth } from '../auth'
-import { redirect } from 'next/navigation'
+import React from 'react';
+import { auth } from '../auth';
+import { redirect } from 'next/navigation';
+import Logout from '../components/Logout';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-const Homepage = async  () => {
-
+const Homepage = async () => {
     const session = await auth();
 
-    if (!session?.user) redirect("/");
-  return (
-    <div>
-    
-    <nav className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <span className="text-xl font-semibold">MyApp</span>
-        <div className="flex items-center">
-          {/* <img src={session?.user?.image} alt="User" className="h-10 w-10 rounded-full mr-2" />
-          <span>{session?.user?.name}</span> */}
+    console.log('Session:', session); // Log the session object
+
+    if (!session || !session.user) {
+        redirect('/home');
+        return null; // Ensure the component does not render further after redirect
+    }
+
+    return (
+        <div className="flex flex-col items-center m-4">
+            <h1 className="text-3xl my-2">Welcome, {session.user.name}</h1>
+            <img
+                src={session.user.image}
+                alt={session.user.name}
+                className="rounded-full"
+            />
+            <Logout />
         </div>
-      </div>
-    </nav>
-    </div>
-  )
+    );
+};
 
-}
-
-export default Homepage
+export default Homepage;

@@ -1,7 +1,7 @@
 "use client";
 import { doNextLogin } from "../actions/app"
 import SocialButtons from "../components/socialbuttons";
-export default function Signup() {
+export default function Signin() {
   return (
     <>
      
@@ -12,7 +12,7 @@ export default function Signup() {
             src="/logo.png"
             alt="Workflow"
           />
-          <h2 className="mt-6 text-center text-3xl font-extrabold  font-font text-gray-900">Sign in to your account</h2>
+          <h2 className="mt-6 text-center text-3xl font-extrabold  font-font text-gray-900">Sign up for an account</h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Or{' '}
             <a href="#" className="font-medium text-three font-font  hover:text-one">
@@ -23,7 +23,7 @@ export default function Signup() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form action={doNextLogin} className="space-y-6"  method="POST">
+            <form className="space-y-6"  method="POST">
               <div>
                 <label htmlFor="email" className="block text-sm  font-font font-medium text-gray-700">
                   Email address
