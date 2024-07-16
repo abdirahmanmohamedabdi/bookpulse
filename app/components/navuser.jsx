@@ -12,7 +12,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Userer() {
+export default function navUser() {
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (

@@ -132,7 +132,7 @@ export default function Navbar() {
             </Popover.Group>
             <div className="flex items-center md:ml-12">
               <a
-                href="#"
+                href="/signin"
                 className="text-base font-font text-black hover:text-gray-900"
               >
                 Sign in
@@ -203,7 +203,7 @@ export default function Navbar() {
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   {" "}
-                  <a href="#" className="text-font hover:text-indigo-500">
+                  <a href="/signin" className="text-font hover:text-indigo-500">
                     Sign in
                   </a>
                 </p>
