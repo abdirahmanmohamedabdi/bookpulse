@@ -71,7 +71,7 @@ export default function Signup() {
           <img
             className="mx-auto h-12 w-auto"
             src="/logo.png"
-            alt="Workflow"
+            alt="Workflo"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold  font-font text-gray-900">Sign up for an account</h2>
           <p className="mt-2 text-center text-sm text-gray-600">
